@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
             <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page">Home</a>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-900 rounded md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page">Home</a>
             </li>
             <li>
                 <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">About</a>
@@ -76,19 +76,103 @@
     
     <!-- Product section starts -->
 
-    <section id="Product">
+    <section id="Product" class="py-8">
         <div class="max-w-screen-xl mx-auto p-4">
-            <div class="max-w-screen-md mx-auto">
-                <div class="mx-auto px-4 py-1 bg-red-100 text-red-800 rounded-2xl border border-red-200 font-medium" style="width: fit-content;">Products</div>
-                <h2 class="font-semibold text-2xl" >Welcome to Our Paint Product Range</h2>
-                <p>We take pride in offering a diverse range of high-quality paint products to cater to all your painting needs</p>
+            <div class="max-w-screen-sm mx-auto mb-10">
+                <div class="mx-auto px-4 py-0 bg-red-100 text-red-800 rounded-2xl border border-red-200 font-medium mb-4" style="width: fit-content;">Products</div>
+                <h2 class="font-semibold text-2xl lg:text-3xl text-center mb-4 md:mb-3" >Welcome to Our Paint Product Range</h2>
+                <p class="text-center text-gray-600">We take pride in offering a diverse range of high-quality paint products to cater to all your painting needs</p>
             </div>
         </div>
+
+        
+        <div class="mb-4  max-w-screen-lg mx-auto overflow-auto py-1 h-fit">
+            <ul class="f-fit flex -mb-px text-sm font-medium text-center text-gray-500  mx-auto justify-center border-b border-gray-200 w-fit" id="tabExample" role="tablist">
+                <li class="mr-2" role="presentation">
+                    <button class="tab w-48 px-10 inline-block p-2 border-b-2 border-red-300 text-red-600 rounded-t-lg hover:text-red-600 hover:border-red-300 " 
+                        id="interior-tab-example" 
+                        type="button" 
+                        role="tab" 
+                        aria-controls="interior-example" 
+                        aria-selected="true">Interior Paints
+                    </button>
+                </li>
+                <li class="mr-2" role="presentation">
+                    <button class="tab w-48 px-10 inline-block p-2 border-b-2 border-transparent rounded-t-lg hover:text-red-600 hover:border-red-300 " 
+                        id="exterior-tab-example" 
+                        type="button" 
+                        role="tab" 
+                        aria-controls="exterior-example" 
+                        aria-selected="false">Exterior Paints
+                    </button>
+                </li>
+                <li class="mr-2" role="presentation">
+                    <button 
+                        class="tab w-48 px-10 inline-block p-2 border-b-2 border-transparent rounded-t-lg hover:text-red-600 hover:border-red-300 " 
+                        id="primer-tab-example" 
+                        type="button" 
+                        role="tab" 
+                        aria-controls="primer-example" 
+                        aria-selected="false">Primer
+                    </button>
+                </li>
+                <li role="presentation">
+                    <button 
+                        class="tab w-48 px-10 inline-block p-2 border-b-2 border-transparent rounded-t-lg hover:text-red-600 hover:border-red-300 " 
+                        id="tools-tab-example" 
+                        type="button" 
+                        role="tab" 
+                        aria-controls="tools-example" 
+                        aria-selected="false">Painting Tools
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div id="tabContentExample">
+            <div class="tab-panel p-4 rounded-lg bg-gray-50 dark:bg-gray-800" 
+                id="interior-example" 
+                role="tabpanel" 
+                aria-labelledby="interior-tab-example">
+                <div>
+                    <div class="cards">
+                        <h3>Matt Emulsion Paint</h3>
+                        <p>lorem12</p>
+                    </div>
+                    <div class="cards">
+                        <h3>Matt Emulsion Paint</h3>
+                        <p>lorem12</p>
+                    </div>
+                    <div class="cards">
+                        <h3>Matt Emulsion Paint</h3>
+                        <p>lorem12</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-panel hidden p-4 rounded-lg bg-gray-50" 
+                id="exterior-example" 
+                role="tabpanel" 
+                aria-labelledby="exterior-tab-example">
+                <p class="text-sm text-gray-500 dark:text-gray-400">2 This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+            </div>
+            <div class="tab-panel hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" 
+                id="primer-example" 
+                role="tabpanel" 
+                aria-labelledby="primer-tab-example">
+                <p class="text-sm text-gray-500 dark:text-gray-400"> 3 This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+            </div>
+            <div class="tab-panel hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" 
+                id="tools-example" 
+                role="tabpanel" 
+                aria-labelledby="tools-tab-example">
+                <p class="text-sm text-gray-500 dark:text-gray-400">4 This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+            </div>
+        </div>
+
     </section>
 
     <!-- Product section ends -->
 
 
-      
+    <script src="./script.js"></script>
 </body>
 </html>
