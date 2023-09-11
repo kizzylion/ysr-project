@@ -1,3 +1,19 @@
+// Toggle hambuger menu
+const menuBtn = document.getElementById("menuBtn");
+const navBar = document.getElementById("navbar-default");
+console.log(menuBtn)
+function toggleMenu() {
+  console.log('yes')
+  navBar.classList.toggle("hidden");
+}
+
+if (navBar) {
+  menuBtn.addEventListener("click", toggleMenu);
+}
+
+
+
+
 
 
 //? products for example
