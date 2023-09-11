@@ -87,7 +87,7 @@
 
         
         <div class="mb-4  max-w-screen-lg mx-auto overflow-auto py-1 h-fit">
-            <ul class="f-fit flex -mb-px text-sm font-medium text-center text-gray-500  mx-auto justify-center border-b border-gray-200 w-fit" id="tabExample" role="tablist">
+            <ul class=" flex md:justify-center text-sm font-medium text-center text-gray-500  mx-auto border-b border-gray-200" id="tabExample" role="tablist">
                 <li class="mr-2" role="presentation">
                     <button class="tab w-48 px-10 inline-block p-2 border-b-2 border-red-300 text-red-600 rounded-t-lg hover:text-red-600 hover:border-red-300 " 
                         id="interior-tab-example" 
@@ -128,24 +128,40 @@
                 </li>
             </ul>
         </div>
-        <div id="tabContentExample">
-            <div class="tab-panel p-4 rounded-lg bg-gray-50 dark:bg-gray-800" 
+        <div id="tabContentExample" class="max-w-screen-sm mx-auto">
+            <div class="tab-panel p-4 rounded-lg bg-gray-50 grid grid-cols-3 gap-4 max-[500px]:grid-cols-2 justify-center " 
                 id="interior-example" 
                 role="tabpanel" 
                 aria-labelledby="interior-tab-example">
-                <div>
-                    <div class="cards">
-                        <h3>Matt Emulsion Paint</h3>
-                        <p>lorem12</p>
+                <div class=" inline-block pb-4 cards bg-white hover:drop-shadow-xl rounded-lg">
+                    <div class="bg-gray-200 h-auto">
+                        <img src="./images/princessContainerImage.png" alt="productImage"
+                            class="w-2/3 mx-auto pt-10">
                     </div>
-                    <div class="cards">
-                        <h3>Matt Emulsion Paint</h3>
-                        <p>lorem12</p>
+                    <h3 class="px-4 text-lg font-semibold text-center mt-4">Matt Emulsion Paints</h3>
+                    <p class="px-4 text-center text-gray-600 mb-4 line-clamp-3 text-sm">This type of paint has a matte finish and is great for hiding imperfections on walls</p>
+                    <a href="#" 
+                    class="block px-12 py-2 border border-gray-200 rounded-lg mx-auto w-fit hover:bg-gray-100 hover:border-gray-200">Explore</a>
+                </div>
+                <div class=" inline-block pb-4 cards bg-white hover:drop-shadow-xl rounded-lg">
+                    <div class="bg-gray-200 h-auto">
+                        <img src="./images/princessContainerImage.png" alt="productImage"
+                            class="w-2/3 mx-auto pt-10">
                     </div>
-                    <div class="cards">
-                        <h3>Matt Emulsion Paint</h3>
-                        <p>lorem12</p>
+                    <h3 class="px-4 text-lg font-semibold text-center mt-4">Matt Emulsion Paints</h3>
+                    <p class="px-4 text-center text-gray-600 mb-4 line-clamp-3 text-sm">This type of paint has a matte finish and is great for hiding imperfections on walls</p>
+                    <a href="#" 
+                    class="block px-12 py-2 border border-gray-200 rounded-lg mx-auto w-fit hover:bg-gray-100 hover:border-gray-200">Explore</a>
+                </div>
+                <div class=" inline-block pb-4 cards bg-white hover:drop-shadow-xl rounded-lg">
+                    <div class="bg-gray-200 h-auto">
+                        <img src="./images/princessContainerImage.png" alt="productImage"
+                            class="w-2/3 mx-auto pt-10">
                     </div>
+                    <h3 class="px-4 text-lg font-semibold text-center mt-4">Matt Emulsion Paints</h3>
+                    <p class="px-4 text-center text-gray-600 mb-4 line-clamp-3 text-sm">This type of paint has a matte finish and is great for hiding imperfections on walls</p>
+                    <a href="#" 
+                    class="block px-12 py-2 border border-gray-200 rounded-lg mx-auto w-fit hover:bg-gray-100 hover:border-gray-200">Explore</a>
                 </div>
             </div>
             <div class="tab-panel hidden p-4 rounded-lg bg-gray-50" 
@@ -154,13 +170,13 @@
                 aria-labelledby="exterior-tab-example">
                 <p class="text-sm text-gray-500 dark:text-gray-400">2 This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
             </div>
-            <div class="tab-panel hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" 
+            <div class="tab-panel hidden p-4 rounded-lg bg-gray-50" 
                 id="primer-example" 
                 role="tabpanel" 
                 aria-labelledby="primer-tab-example">
                 <p class="text-sm text-gray-500 dark:text-gray-400"> 3 This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
             </div>
-            <div class="tab-panel hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" 
+            <div class="tab-panel hidden p-4 rounded-lg bg-gray-50" 
                 id="tools-example" 
                 role="tabpanel" 
                 aria-labelledby="tools-tab-example">

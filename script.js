@@ -30,4 +30,53 @@ tabs.forEach(tab=>{
     })
 })
 
-console.log(tabs)
+
+//? products for example
+const tabRecords = [
+    {
+      src: '.images/princessContainerImage.png',
+      name: 'Matt Emulsion Paint',
+      description: 'This type of paint has a matte finish and is great for hiding imperfections on walls',
+      type: 'Interior',
+    },
+    {
+      src:  '.images/princessContainerImage.png',
+      name: 'Emulsion Paints',
+      description: 'This type of paint has a slight sheen and is more durable than flat paint.',
+      type: 'Interior',
+
+    },
+    {
+      src: '.images/princessContainerImage.png',
+      name: 'Satin Paints',
+      description: 'This type of paint has a higher sheen than eggshell paint and is more durable.',
+      type: 'Interior'
+    },
+    {
+      src: '.images/princessContainerImage.png',
+      name: 'Matt Exterior Paint',
+      description: 'This type of paint has a slight sheen and is more durable for the exterior part of the home.',
+      type: 'Exterior'
+    },
+    {
+      src: '.images/princessContainerImage.png',
+      name: 'Primer',
+      description: 'This are you to fix the surface of your wall before painting .',
+      type: 'Primer'
+    },
+    {
+      src: '.images/princessContainerImage.png',
+      name: 'Painting Brush',
+      description: 'Quality brush to make your your job smooth and professional',
+      type: 'Tools'
+    },
+  ];
+  
+
+  //? predefined filter functions
+const filter = {
+    ['Interior']: (record) => record.type === 'Interior',
+    ['Exterior']: (record) => record.type === 'Exterior',
+    ['Primer']: (record) => record.type === 'Primer',
+    ['Tools']: (record) => record.type === 'Tools',
+  }
